@@ -1,0 +1,43 @@
+.pref {
+  background-color: whitesmoke;
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  padding: 0.5em;
+  position: absolute;
+  top: 4em;
+  right: 40px;
+  width: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto);
+}
+
+.hidden {
+  display: none;
+}
+
+.pref__section {
+  border-top: 1px solid #dedede;
+}
+
+.pref__section:first-child {
+  border-top: none;
+}
+
+.pref__section-header {
+  font-weight: bold;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.pref__section-link {
+  margin: 0.5em 0.7em;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+.pref__section-link:hover {
+  background-color: #dedede;
+}

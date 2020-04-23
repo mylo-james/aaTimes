@@ -1,0 +1,12 @@
+.nav__list {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.nav__list-item {
+  padding: 12px;
+}
+.nav__list-item a:hover {
+  text-decoration: underline;
+}

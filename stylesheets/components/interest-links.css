@@ -1,0 +1,63 @@
+.interests {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  padding: 5px 0px;
+  border-top: 3px black solid;
+  border-bottom: 3px black solid;
+}
+
+.interests__item {
+  margin: auto;
+  padding: 0 7px;
+  display: flex;
+  flex-flow: column;
+  height: 75px;
+}
+
+.interests__item-header {
+  font-weight: bold;
+  padding: 5px 0px;
+}
+
+.interests__item-subtext {
+  height: 100%;
+  overflow: hidden;
+  min-width: 110px;
+}
+
+.interests__item img {
+  height: 75px;
+  width: 75px;
+  object-fit: contain;
+}
+
+.stocks {
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.stocks div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  border-bottom: 1px solid #6f6f6f;
+}
+
+.stocks__price {
+  color: green;
+  font-weight: bold;
+}
+
+.interests__big-text {
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+}

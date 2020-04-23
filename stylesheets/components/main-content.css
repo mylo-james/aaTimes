@@ -1,0 +1,252 @@
+main {
+  margin: auto;
+  width: 90%;
+}
+.articles-master {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'artcol1 artcol2';
+}
+
+.article {
+  padding: 10px;
+}
+
+.article__header {
+  padding: 0;
+}
+
+.main-article__header {
+  padding: 0;
+}
+
+.article__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.main-article__title {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  /* padding-bottom: 10px; */
+}
+
+.main-article__byline {
+  color: #999;
+  font-size: 11px;
+  padding-bottom: 7px;
+}
+
+.article__byline {
+  color: #999;
+  font-size: 11px;
+  padding-bottom: 7px;
+}
+.article__author {
+  text-transform: uppercase;
+}
+
+.book-author {
+  color: #999;
+}
+
+.book-title {
+  font-weight: bold;
+}
+
+.video {
+  text-align: left;
+}
+
+.articles__col1 {
+  /* background-color: #6288a5; */
+  /* margin-top: 10px; */
+  grid-area: artcol1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header'
+    '1-1 1-2'
+    '1-3 1-4';
+}
+
+.article__col1-header {
+  grid-area: header;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+  padding: 6px;
+}
+
+.g1-1 {
+  grid-area: 1-1;
+  border: 1px solid black;
+  padding: 0px 20px;
+  height: auto;
+}
+.g1-1 ul {
+  list-style-type: disc;
+}
+
+.g1-2 {
+  grid-area: 1-2;
+  padding: 8px 8px;
+  margin: 0 auto;
+}
+
+.g1-3 {
+  grid-area: 1-3;
+  border: 1px solid black;
+  padding: 8px 8px;
+}
+
+.g1-4 {
+  grid-area: 1-4;
+  border: 1px solid black;
+  padding: 8px 8px;
+}
+
+.articles__col2 {
+  /* background-color: #6288a5; */
+  /* margin-top: 10px; */
+  grid-area: artcol2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.g2-1 {
+  border: 1px solid black;
+  padding: 8px 8px;
+}
+
+.g2-2 {
+  border: 1px solid black;
+  padding: 8px 8px;
+}
+
+.g2-2 img {
+  max-width: 100%;
+}
+
+.g2-3 {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    '3-1 3-2'
+    '3-3 3-4'
+    '3-5 3-6'
+    '3-7 3-6';
+}
+
+.g2-3-1 {
+  grid-area: 3-1;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 4px 4px;
+}
+
+.g2-3-2 {
+  grid-area: 3-2;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 4px 4px;
+}
+
+.g2-3-3 {
+  grid-area: 3-3;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 4px 4px;
+}
+
+.g2-3-4 {
+  grid-area: 3-4;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 4px 4px;
+}
+
+.g2-3-5 {
+  grid-area: 3-5;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 4px 4px;
+}
+
+.g2-3-6 {
+  grid-area: 3-6;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 4px 4px;
+}
+
+.g2-3-7 {
+  grid-area: 3-7;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 4px 4px;
+}
+
+@media screen and (max-width: 1199px) {
+  .articles-master {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'artcol1'
+      'artcol2';
+  }
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 999px) {
+  .interests {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .articles__col1 {
+    /* background-color: #6288a5; */
+    /* margin-top: 10px; */
+    grid-area: artcol1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'header'
+      '1-1'
+      '1-2'
+      '1-3'
+      '1-4';
+  }
+
+  .g1-2 {
+    margin: 0 auto;
+  }
+
+  .masthead__actions {
+    grid-area: 1/2/2/4 !important;
+  }
+  .masthead__paper {
+    display: none !important;
+  }
+  .masthead__logo {
+    grid-area: 3/1/4/4 !important;
+  }
+  .masthead__date {
+    display: none !important;
+  }
+}
