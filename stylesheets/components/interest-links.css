@@ -1,43 +1,51 @@
 .interests {
   box-sizing: border-box;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   height: 110px;
   font-size: 12px;
   margin-bottom: 20px;
-  padding: 5px 0px;
+
   border-top: 3px black solid;
   border-bottom: 3px black solid;
 }
 
 .interests__item {
-  margin: auto;
   padding: 0 7px;
-  display: flex;
-  flex-flow: column;
-  height: 75px;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  grid-template-rows: 20px 1fr;
+  column-gap: 10px;
+  grid-template-areas:
+    'img header '
+    'img subtext';
+  height: 85px;
+  width: 100%;
+  border-right: 1px solid black;
+}
+.interests__item:last-child {
+  border: none;
 }
 
 .interests__item-header {
   font-weight: bold;
-  padding: 5px 0px;
+  white-space: nowrap;
 }
 
 .interests__item-subtext {
   height: 100%;
   overflow: hidden;
-  min-width: 110px;
 }
 
 .interests__item img {
-  height: 75px;
-  width: 75px;
+  margin: auto;
+  grid-area: img;
   object-fit: contain;
 }
 
 .stocks {
-  margin: auto;
-
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -57,7 +65,13 @@
 }
 
 .interests__big-text {
+  grid-row: 1 / 3;
   font-size: 30px;
   font-weight: bold;
   margin: auto;
+  padding: auto;
+}
+
+#item4 {
+  display: flex;
 }

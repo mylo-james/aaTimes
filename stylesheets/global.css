@@ -1,7 +1,11 @@
 body {
-  background-color: whitesmoke;
+  background-color: white;
   font-family: 'nyt-franklin', Arial, Helvetica, sans-serif;
-  line-height: 1em;
+  line-height: 20px;
+}
+li {
+  margin-bottom: 20px;
+  width: 70%;
 }
 
 header,

@@ -23,7 +23,7 @@
           <button class="menu search hidden">GO</button>
         </div>
         <div class="masthead__actions">
-          <button>Subscribe Now</button>
+          <button id="subscribe-button">Subscribe Now</button>
           <button>Log In</button>
           <div class="masthead__button">
             <i class="fas fa-cog" id="preferences-gear"></i>
@@ -61,7 +61,7 @@
         <div class="masthead__logo">
           <img src="./images/AA_Times_Logo.png" />
         </div>
-        <div class="masthead__paper"><i class="far fa-newspaper"></i>Today's Paper</div>
+        <div class="masthead__paper"><i class="far fa-newspaper"></i><span id="paper-txt">Today's Paper</span></div>
       </div>
       <nav class="nav">
         <ul class="nav__list">
@@ -98,42 +98,41 @@
         </ul>
       </nav>
       <div class="interests">
-        <span class="interests__item" id="item1-img">
+        <span class="interests__item" id="item1">
           <img src="./images/dog.png" />
-        </span>
-        <span class="interests__item" id="item1-txt">
           <div class="interests__item-header">Dog Programmers</div>
           <div class="interests__item-subtext">Dogs are learning to code at an incredible pace.</div>
         </span>
-        <span class="interests__item" id="item2-img">
+
+        <span class="interests__item" id="item2">
           <img src="./images/cat.png" />
-        </span>
-        <span class="interests__item" id="item2-txt">
           <div class="interests__item-header">Cats and Coding</div>
           <div class="interests__item-subtext">Cats are on the rise as the #1 example for coding demos.</div>
         </span>
-        <span class="interests__item" id="item3-img">
+
+        <span class="interests__item" id="item3">
           <img src="./images/plug.png" />
-        </span>
-        <span class="interests__item" id="item3-txt">
           <div class="interests__item-header">Plugging stuff In</div>
           <div class="interests__item-subtext">Good or Bad? Find out now.</div>
         </span>
-        <span class="interests__item stocks">
-          <div>AAO</div>
-          <div class="stocks__price">+100%</div>
-          <div>SWE</div>
-          <div class="stocks__price">+150%</div>
-          <div>CAT</div>
-          <div class="stocks__price">+111%</div>
+
+        <span class="interests__item" id="item4">
+
+          <span class="stocks">
+            <div>AAO</div>
+            <div class="stocks__price">+100%</div>
+            <div>SWE</div>
+            <div class="stocks__price">+150%</div>
+            <div>CAT</div>
+            <div class="stocks__price">+111%</div>
+          </span>
+
         </span>
-        <span class="interests__item" id="item5-img">
+
+        <span class="interests__item" id="item5">
           <img src="./images/sun-icon.png" />
-        </span>
-        <span class="interests__item" id="item5-txt">
           <div class="interests__big-text">77°F</div>
         </span>
-      </div>
     </header>
     <main>
       <div class="articles-master">
